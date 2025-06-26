@@ -237,13 +237,18 @@ boxes.forEach(box => {
         if (box.classList.contains('box-6')) {
             workButton.innerText = 'Germinal';
             workButton_2.style.display = 'flex';
+            access.style.display = 'none';
+        } else {
+            workButton.innerText = 'Read';
+            workButton_2.style.display = 'none';
+            access.style.display = 'none';
         }
 
 
         workButton.addEventListener('click', () => {  
             modalTitle.innerHTML = boxtitle;
             modalType.innerHTML = boxtype;      
-            boxContent.innerText = boxContentText_2.innerText;
+            boxContent.innerText = boxContentText.innerText;
             modal.style.display = 'flex';
             modalContent.scrollTop = 0;
             workButton.style.display = 'none';
@@ -258,15 +263,13 @@ boxes.forEach(box => {
         workButton_2.addEventListener('click', () => {  
             modalTitle.innerHTML = boxtitle;
             modalType.innerHTML = boxtype;      
-            boxContent.innerText = boxContentText.innerText;
+            boxContent.innerText = boxContentText_2.innerText;
             modal.style.display = 'flex';
             modalContent.scrollTop = 0;
             workButton.style.display = 'none';
             workButton_2.style.display = 'none';
             boxContent.style.fontFamily = fontFam.innerText;
             access.style.display = 'flex';
-            accessLink.href = link.innerText;
-            accessLink.style.color = boxTextColor;
         });
 
         
