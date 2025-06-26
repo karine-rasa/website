@@ -2311,7 +2311,7 @@ footer {
 
 .modal-main-title {
     font-family: 'Yeseva One', sans-serif;
-    font-size: var(--trente-pixel-font-size);
+    font-size: 30px;
     width: 100%;
     letter-spacing: -2px;
     word-spacing: 0.05rem; 
