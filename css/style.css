@@ -387,6 +387,7 @@ footer {
     font-family: var(--font-yeseva);
     font-size: var(--eighty-pixel-font-size);
     color: var(--primary-color);
+    z-index: 1000;
 }
 
 .home-hero-header span {
@@ -399,6 +400,18 @@ footer {
     color: var(--background-color);
     margin-top: 2rem;
     line-height: 1.5;
+    z-index: 1000;
+}
+
+.home-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+    border-radius: 30px;
 }
 
 .home-hero-about {
@@ -2479,6 +2492,7 @@ textarea {
 
 .hero-1 {
     margin-top: 7rem;
+    position: relative;
 }
 
 .section {
@@ -2488,6 +2502,7 @@ textarea {
 @media screen and (max-width: 280px) {
     .home-hero-header {
         font-size: 30px!important;
+        z-index: 1000;
     }
 
     .services-hero-header {
