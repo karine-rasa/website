@@ -101,6 +101,10 @@
   border-bottom: 1px solid var(--middle-color);
 }
 
+.header-font {
+    padding-top: 30px;
+}
+
 .accordion-header {
   width: 100%;
   padding: 15px 20px;
@@ -386,8 +390,9 @@ footer {
 .home-hero-header {
     font-family: var(--font-yeseva);
     font-size: var(--eighty-pixel-font-size);
-    color: var(--primary-color);
+    color: var(--text-color);
     z-index: 1000;
+    line-height: 1;
 }
 
 .home-hero-header span {
@@ -397,7 +402,7 @@ footer {
 .home-hero-content-about {
     font-family: var(--font-helvetica);
     font-size: var(--paragraph-text-size);
-    color: var(--background-color);
+    color: var(--primary-color);
     margin-top: 2rem;
     line-height: 1.5;
     z-index: 1000;
