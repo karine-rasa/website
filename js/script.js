@@ -102,10 +102,10 @@ const observer = new IntersectionObserver(entries => {
             card.style.opacity = "1!important";
             // Move the card to the center when in view
             if (card.closest('.left-container')) {
-                card.style.left = "-20%";  // Move it to the left
+                card.style.left = "-10%";  // Move it to the left
                 card.style.opacity = "1!important";
             } else if (card.closest('.right-container')) {
-                card.style.left = "20%";   // Move it to the right
+                card.style.left = "10%";   // Move it to the right
                 card.style.opacity = "1!important";
             }
             card.style.opacity = "1";
@@ -113,9 +113,9 @@ const observer = new IntersectionObserver(entries => {
         } else {
             // When out of view, reset the left property to its initial position
             if (card.closest('.left-container')) {
-                card.style.left = "5%";  // Move it to the left
+                card.style.left = "2%";  // Move it to the left
             } else if (card.closest('.right-container')) {
-                card.style.left = "-5%";   // Move it to the right
+                card.style.left = "-2%";   // Move it to the right
             }
         }
     });
@@ -128,18 +128,18 @@ timeline_cards.forEach(card => {
     // Mouse enter event to apply hover effect
     card.addEventListener('mouseenter', () => {
         if (card.closest('.left-container')) {
-            card.style.left = '2%'; // Move to center if it's in the left container
+            card.style.left = '-4%'; // Move to center if it's in the left container
         } else if (card.closest('.right-container')) {
-            card.style.left = '-2%'; // Move to center if it's in the right container
+            card.style.left = '4%'; // Move to center if it's in the right container
         }
     });
 
     // Mouse leave event to reset styles after hover
     card.addEventListener('mouseleave', () => {
         if (card.closest('.left-container')) {
-            card.style.left = '-20%';  // Reset position for left container
+            card.style.left = '-10%';  // Reset position for left container
         } else if (card.closest('.right-container')) {
-            card.style.left = '20%';   // Reset position for right container
+            card.style.left = '10%';   // Reset position for right container
         }
     });
 
@@ -179,9 +179,9 @@ timeline_mobile_cards.forEach(card => {
     // Mouse leave event to reset styles after hover
     card.addEventListener('mouseleave', () => {
         if (card.closest('.left-container')) {
-            card.style.left = '-20%';  // Reset position for left container
+            card.style.left = '-10%';  // Reset position for left container
         } else if (card.closest('.right-container')) {
-            card.style.left = '20%';   // Reset position for right container
+            card.style.left = '10%';   // Reset position for right container
         }
     });
 

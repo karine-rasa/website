@@ -1176,7 +1176,7 @@ footer {
     border-radius: 20px;
     padding: var(--thirty-pixel-font-size);
     position: relative;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
     opacity: 0;
     cursor: pointer;
 }
@@ -1434,9 +1434,10 @@ footer {
 .education-item-header {
     font-size: 2.1875rem; /* 35px */
     font-family: 'Yeseva One', sans-serif;
-    font-weight: ;
-    letter-spacing: -2px;
+    font-weight: 0;
+    letter-spacing: 0px;
     line-height: 1.2;
+    margin-bottom: 2rem;
 }
 
 .ed-1 {
