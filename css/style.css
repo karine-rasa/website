@@ -118,6 +118,7 @@
   gap: 10px;
   cursor: pointer;
   transition: background 0.3s ease;
+
 }
 
 /* .accordion-header:hover {
@@ -192,7 +193,7 @@ header {
     padding: 20px 5vw;
     background-color: var(--secondary-color);
     border-radius: 20px;
-    z-index: 1000;
+    z-index: 2000;
     position: fixed;
     top: 1.825rem;
     left: 50%;
