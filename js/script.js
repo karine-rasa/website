@@ -237,8 +237,11 @@ boxes.forEach(box => {
         });
         console.log(getComputedStyle(box).backgroundColor);
         modalText.style.color = boxTextColor;
+        boxContent.style.color = boxTextColor;
         modalContent.style.backgroundColor = getComputedStyle(box).backgroundColor;
         modal.style.display = 'flex';
+        workButton.style.backgroundColor = boxTextColor;
+        workButton.style.color = getComputedStyle(box).backgroundColor;
     });
 });
 

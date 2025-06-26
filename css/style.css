@@ -2330,7 +2330,7 @@ footer {
     padding: 20px;
     color: var(--primary-color);
     border-radius: 30px;
-    border: 2px solid var(--secondary-color);
+    border: transparent;
     cursor: pointer;
 }
 
