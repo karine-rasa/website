@@ -1462,7 +1462,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 16.75rem;
+    width: auto;
     height: 3.5rem;
     background-color: var(--secondary-color);
     padding: 20px;
@@ -1686,11 +1686,12 @@ footer {
     color: var(--primary-color);
     font-family: "Yeseva One", sans-serif;
     font-size: var(--twenty-pixel-font-size);
-    width: 100%;
+    width: auto;
     height: 100%; 
     background-color: var(--secondary-color);
     border-radius: var(--ten-pixel-font-size);
-    padding: var(--ten-pixel-font-size);  
+    text-align: left;
+    padding: var(--ten-pixel-font-size);
 }
 
 .writing-part-two-image {
@@ -1939,7 +1940,7 @@ footer {
     height: 100%;
     gap: var(--ten-pixel-font-size);
     color: var(--primary-color);
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Yeseva One', sans-serif;
 }
 
 .assistantship-part-two-image {
