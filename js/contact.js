@@ -3,7 +3,7 @@ console.log(contactForm, contact_message);
 
 const sendMail = (e) => {
     e.preventDefault()
-    emailjs.sendForm('service_nngyt6','template_fj5s8za','#contact-form','YPt7i2Jl1Is68cWu-')
+    emailjs.sendForm('service_nngytb6','template_fj5s8za','#contact-form','YPt7i2Jl1Is68cWu-')
     .then(() => {
         contact_message.innerHTML = "Message sent successfully!";
         contact_message.style.color = "#00ff00";
