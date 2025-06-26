@@ -102,7 +102,7 @@
 }
 
 .header-font {
-    padding-top: 30px;
+    margin-top: 20px;
 }
 
 .accordion-header {
@@ -486,6 +486,7 @@ footer {
     flex-direction: column;
     gap: 2.7rem;
     margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 .home-services-header {
@@ -634,6 +635,7 @@ footer {
     letter-spacing: -2px;
     line-height: 1.2;
     position: relative;
+    padding: 2rem;
 }
 
 .home-portfolio-container {
