@@ -212,29 +212,70 @@ const modalText = document.querySelector('.modal-head');
 
 
 boxes.forEach(box => {
-    console.log(box);
+    console.log('HELLO', box);
     box.addEventListener('click', () => {
         const boxtitle = box.querySelector('.box-main-title').innerText;
         const boxtype = box.querySelector('.box-type').innerText;
         const boxContentIntro = box.querySelector('.box-text-intro');
         const boxContentText = box.querySelector('.box-text-content');
+        const boxContentText_2 = box.querySelector('.box-text-content-2');
         const boxTextColor = getComputedStyle(box).color;
         const workButton = document.querySelector('.workbutton');
+        const workButton_2 = document.querySelector('.workbutton-2');
         const boxContent = document.querySelector('.box-content');
+        const fontFam = box.querySelector('.box-text-font');
+        const link = box.querySelector('.link');
+        const access = document.querySelector('.access');
+        const accessLink = document.querySelector('.access-link');
+        const close = document.querySelector('.ph-x');
 
         modalTitle.innerHTML = boxtitle;
         modalType.innerText = boxtype;
         boxContent.innerText = boxContentIntro.innerText;
         workButton.style.display = 'flex';
 
+        if (box.classList.contains('box-6')) {
+            workButton.innerText = 'Germinal';
+            workButton_2.style.display = 'flex';
+        }
+
+
         workButton.addEventListener('click', () => {  
+            modalTitle.innerHTML = boxtitle;
+            modalType.innerHTML = boxtype;      
+            boxContent.innerText = boxContentText_2.innerText;
+            modal.style.display = 'flex';
+            modalContent.scrollTop = 0;
+            workButton.style.display = 'none';
+            workButton_2.style.display = 'none';
+            boxContent.style.fontFamily = fontFam.innerText;
+            access.style.display = 'flex';
+            accessLink.href = link.innerText;
+            accessLink.style.color = boxTextColor;
+        });
+
+
+        workButton_2.addEventListener('click', () => {  
             modalTitle.innerHTML = boxtitle;
             modalType.innerHTML = boxtype;      
             boxContent.innerText = boxContentText.innerText;
             modal.style.display = 'flex';
             modalContent.scrollTop = 0;
             workButton.style.display = 'none';
+            workButton_2.style.display = 'none';
+            boxContent.style.fontFamily = fontFam.innerText;
+            access.style.display = 'flex';
+            accessLink.href = link.innerText;
+            accessLink.style.color = boxTextColor;
         });
+
+        
+            
+
+        
+        
+        close.style.color = boxTextColor;
+        boxContent.style.fontFamily = 'Helvetica, Arial, sans-serif';
         console.log(getComputedStyle(box).backgroundColor);
         modalText.style.color = boxTextColor;
         boxContent.style.color = boxTextColor;
@@ -242,6 +283,8 @@ boxes.forEach(box => {
         modal.style.display = 'flex';
         workButton.style.backgroundColor = boxTextColor;
         workButton.style.color = getComputedStyle(box).backgroundColor;
+        workButton_2.style.backgroundColor = boxTextColor;
+        workButton_2.style.color = getComputedStyle(box).backgroundColor;
     });
 });
 
