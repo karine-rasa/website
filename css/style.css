@@ -984,7 +984,7 @@ footer {
     text-align: left;
     align-self: flex-start;
     width: 70%;
-    letter-spacing: -2px;
+    letter-spacing: 0px;
     word-spacing: 0.05rem; 
 }
 
@@ -1209,7 +1209,7 @@ footer {
     font-size: var(--twenty-pixel-font-size);
     color: var(--text-color);
     width: 100%;
-    letter-spacing: -2px;
+    letter-spacing: 0px;
     word-spacing: 0.05rem; 
     margin-bottom: 0.5rem;
 }
@@ -1219,7 +1219,7 @@ footer {
     font-size: var(--thirty-pixel-font-size);
     color: var(--text-color);
     width: 100%;
-    letter-spacing: -2px;
+    letter-spacing: 0px;
     word-spacing: 0.05rem; 
     margin-bottom: 1rem;
 }
