@@ -198,9 +198,10 @@ a {
     text-decoration: none;
 }
 
-.box-text-content {
+.box-text-content, .box-genre {
     display: none;
 }
+
 
 .box-text-intro {
     display: none;

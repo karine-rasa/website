@@ -216,6 +216,7 @@ boxes.forEach(box => {
     box.addEventListener('click', () => {
         const boxtitle = box.querySelector('.box-main-title').innerText;
         const boxtype = box.querySelector('.box-type').innerText;
+        const boxgenre = box.querySelector('.box-genre').innerText;
         const boxContentIntro = box.querySelector('.box-text-intro');
         const boxContentText = box.querySelector('.box-text-content');
         const boxContentText_2 = box.querySelector('.box-text-content-2');
@@ -230,16 +231,18 @@ boxes.forEach(box => {
         const close = document.querySelector('.ph-x');
 
         modalTitle.innerHTML = boxtitle;
-        modalType.innerText = boxtype;
+        modalType.innerText = boxgenre;
         boxContent.innerText = boxContentIntro.innerText;
         workButton.style.display = 'flex';
-
-        if (box.classList.contains('box-6')) {
+        
+        if (box.classList.contains('fr')) {
+            workButton.innerText = 'Regarder';    
+        } else if (box.classList.contains('box-6')) {
             workButton.innerText = 'Germinal';
             workButton_2.style.display = 'flex';
             access.style.display = 'none';
             
-        } else {
+        }  else {
             workButton.innerText = 'Read';
             workButton_2.style.display = 'none';
             access.style.display = 'none';
