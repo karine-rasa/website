@@ -112,9 +112,9 @@
   height: auto;
 }
 
-.accordion-item {
+/* .accordion-item {
   border-bottom: 1px solid var(--middle-color);
-}
+} */
 
 .header-font {
     margin-top: 20px;
