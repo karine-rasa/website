@@ -2,9 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
     text-decoration: none;
+    list-style: none;
 }
+
+.custom-lists-only p,
+.custom-lists-only ol {
+  list-style: circle!important;         /* or 'circle', 'square', 'decimal', etc. */
+  padding-left: 1.5rem;     /* gives space for the bullets or numbers */
+}
+
 
 @font-face {
     font-family: 'Helvetica';
@@ -96,6 +103,14 @@
   overflow: hidden;
   height: auto;
 }
+.accordion-title {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  height: auto;
+}
 
 .accordion-item {
   border-bottom: 1px solid var(--middle-color);
@@ -131,10 +146,13 @@
   transition: max-height 0.4s ease;
   background: var(--primary-color);
   padding: 0 20px;
+  list-style: circle!important;
+
 }
 
 .accordion-body p {
   margin: 15px 0;
+  list-style: circle;
 }
 
 .icon {
@@ -172,6 +190,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     background-color: var(--background-color);
+    
 }
 
 a {
@@ -3499,6 +3518,17 @@ textarea {
         justify-content: center;
         align-items: flex-start;
     }
+}
+
+@media screen and (max-width: 1024px) {
+    .language-icon {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    height: 60px;
+    width: 60px;
+    z-index: 1000;
+}
 }
 
 @media screen and (max-width: 1439px) {
