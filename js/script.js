@@ -236,7 +236,9 @@ boxes.forEach(box => {
         workButton.style.display = 'flex';
         
         if (box.classList.contains('fr')) {
-            workButton.innerText = 'Regarder';    
+            workButton.innerText = 'Lire';  
+            workButton_2.style.display = 'none';
+            access.style.display = 'none';  
         } else if (box.classList.contains('box-6')) {
             workButton.innerText = 'Germinal';
             workButton_2.style.display = 'flex';
