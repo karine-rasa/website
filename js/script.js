@@ -238,13 +238,30 @@ boxes.forEach(box => {
             workButton.innerText = 'Germinal';
             workButton_2.style.display = 'flex';
             access.style.display = 'none';
+            
         } else {
             workButton.innerText = 'Read';
             workButton_2.style.display = 'none';
             access.style.display = 'none';
         }
 
-
+        if(workButton.innerText === 'Germinal') {
+            workButton.addEventListener('click', () => {  
+                modalContent.style.width = '1200px';
+                modalContent.style.height = '75vh';
+                access.style.display = 'none';
+             });
+        } else {
+            workButton.addEventListener('click', () => {  
+                
+                modalContent.style.width = '550px';
+                modalContent.style.height = '500px';
+             });
+        }
+        
+        modalContent.style.width = '550px';
+        modalContent.style.height = '500px';
+        
         workButton.addEventListener('click', () => {  
             modalTitle.innerHTML = boxtitle;
             modalType.innerHTML = boxtype;      
@@ -254,9 +271,17 @@ boxes.forEach(box => {
             workButton.style.display = 'none';
             workButton_2.style.display = 'none';
             boxContent.style.fontFamily = fontFam.innerText;
-            access.style.display = 'flex';
+            
+            if(workButton.innerText === 'Germinal') {
+           
+                access.style.display = 'none';
+             
+            } else {
+         
+              access.style.display = 'flex';
             accessLink.href = link.innerText;
-            accessLink.style.color = boxTextColor;
+           
+        }
         });
 
 
@@ -269,14 +294,13 @@ boxes.forEach(box => {
             workButton.style.display = 'none';
             workButton_2.style.display = 'none';
             boxContent.style.fontFamily = fontFam.innerText;
-            access.style.display = 'flex';
+            access.style.display = 'none';
+            modalContent.style.width = '1200px';
+            modalContent.style.height = '75vh';
         });
 
-        
-            
-
-        
-        
+        modalContent.style.width = '550px';
+        modalContent.style.height = '500px';
         close.style.color = boxTextColor;
         boxContent.style.fontFamily = 'Helvetica, Arial, sans-serif';
         console.log(getComputedStyle(box).backgroundColor);
@@ -285,6 +309,8 @@ boxes.forEach(box => {
         modalContent.style.backgroundColor = getComputedStyle(box).backgroundColor;
         modal.style.display = 'flex';
         workButton.style.backgroundColor = boxTextColor;
+        access.style.backgroundColor = boxTextColor;
+        accessLink.style.color = getComputedStyle(box).backgroundColor;
         workButton.style.color = getComputedStyle(box).backgroundColor;
         workButton_2.style.backgroundColor = boxTextColor;
         workButton_2.style.color = getComputedStyle(box).backgroundColor;
