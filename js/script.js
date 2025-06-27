@@ -269,7 +269,7 @@ boxes.forEach(box => {
         
         workButton.addEventListener('click', () => {  
             modalTitle.innerHTML = boxtitle;
-            modalType.innerHTML = boxtype;      
+            modalType.innerHTML = boxgenre;      
             boxContent.innerText = boxContentText.innerText;
             modal.style.display = 'flex';
             modalContent.scrollTop = 0;
