@@ -36,6 +36,7 @@
     --third-color: #638773;
     --fourth-color: #dbd8d2;
     --sixth-color: #94C8B4;
+    --black-color: #000000;
 
     /* Font sizes */
     --paragraph-text-size: 1.125rem; /* 18px */
@@ -2266,7 +2267,7 @@ footer {
 
 .box-6 {
     background-color: var(--middle-color);
-    color: var(--fourth-color);
+    color: var(--text-color);
 }
 
 .modal {

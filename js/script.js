@@ -235,6 +235,7 @@ boxes.forEach(box => {
         boxContent.innerText = boxContentIntro.innerText;
         workButton.style.display = 'flex';
         
+        
         if (box.classList.contains('fr')) {
             workButton.innerText = 'Lire';  
             workButton_2.style.display = 'none';
@@ -244,13 +245,17 @@ boxes.forEach(box => {
             workButton_2.style.display = 'flex';
             access.style.display = 'none';
             
-        }  else {
+        } else {
             workButton.innerText = 'Read';
             workButton_2.style.display = 'none';
             access.style.display = 'none';
+            modalText.style.color = boxTextColor;
+            boxContent.style.color = boxTextColor;
+            close.style.color = boxTextColor;
         }
 
         if(workButton.innerText === 'Germinal') {
+            workButton.style.color = "blue";
             workButton.addEventListener('click', () => {  
                 modalContent.style.width = '1200px';
                 modalContent.style.height = '75vh';
@@ -317,8 +322,33 @@ boxes.forEach(box => {
         access.style.backgroundColor = boxTextColor;
         accessLink.style.color = getComputedStyle(box).backgroundColor;
         workButton.style.color = getComputedStyle(box).backgroundColor;
-        workButton_2.style.backgroundColor = boxTextColor;
-        workButton_2.style.color = getComputedStyle(box).backgroundColor;
+        workButton_2.style.backgroundColor = 'var(--secondary-color)';
+        workButton_2.style.color = 'var(--primary-color)';
+        if(workButton.innerText === 'Germinal') {
+            workButton.style.backgroundColor = 'var(--secondary-color)';
+            workButton.style.color = 'var(--primary-color)';
+        }
+        
+        if (box.classList.contains('box-6')) {
+            modalTitle.style.color = 'var(--black-color)';
+            modalType.style.color = 'var(--black-color)';
+            modalClose.style.color = 'var(--black-color)';
+            modalContent.style.color = 'var(--black-color)';
+            modalText.style.color = 'var(--black-color)';
+            boxContent.style.color = 'var(--black-color)';
+            close.style.color = 'var(--black-color)';
+        } else {
+            modalText.style.color = boxTextColor;
+            boxContent.style.color = boxTextColor;
+            close.style.color = boxTextColor;
+            modalTitle.style.color = boxTextColor;
+            modalType.style.color = boxTextColor;
+        }
+
+        // modalText.style.color = boxTextColor;
+        // boxContent.style.color = boxTextColor;
+        // close.style.color = boxTextColor;
+        // modalTitle.style.color = boxTextColor;
     });
 });
 
