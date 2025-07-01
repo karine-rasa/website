@@ -337,12 +337,14 @@ boxes.forEach(box => {
             modalText.style.color = 'var(--black-color)';
             boxContent.style.color = 'var(--black-color)';
             close.style.color = 'var(--black-color)';
+            modalContent.style.backgroundColor = 'var(--text-color)';
         } else {
             modalText.style.color = boxTextColor;
             boxContent.style.color = boxTextColor;
             close.style.color = boxTextColor;
             modalTitle.style.color = boxTextColor;
             modalType.style.color = boxTextColor;
+            modalContent.style.backgroundColor = getComputedStyle(box).backgroundColor;
         }
 
         // modalText.style.color = boxTextColor;
