@@ -447,7 +447,7 @@ footer {
     text-align: center;
     border-radius: 30px;
     background-color: var(--primary-color);
-    height: 90vh;
+    height: auto;
 }
 
 .home-about-image {
@@ -3587,6 +3587,18 @@ textarea {
     .contact-content {
         width: 50%;
     }
+}
+
+@media screen and (min-width: 1485px) {
+
+    .about-hero-image {
+        height: 600px;
+    }
+
+    .home-hero-about {
+        height: 70vh;
+    } 
+
 }
 
 
