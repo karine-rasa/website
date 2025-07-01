@@ -323,10 +323,10 @@ boxes.forEach(box => {
         accessLink.style.color = getComputedStyle(box).backgroundColor;
         workButton.style.color = getComputedStyle(box).backgroundColor;
         workButton_2.style.backgroundColor = 'var(--secondary-color)';
-        workButton_2.style.color = 'var(--primary-color)';
+        workButton_2.style.color = 'var(--text-color)';
         if(workButton.innerText === 'Germinal') {
             workButton.style.backgroundColor = 'var(--secondary-color)';
-            workButton.style.color = 'var(--primary-color)';
+            workButton.style.color = 'var(--text-color)';
         }
         
         if (box.classList.contains('box-6')) {

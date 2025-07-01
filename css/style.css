@@ -2378,6 +2378,8 @@ footer {
 
 .workbutton-2 {
     display: none;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .workbutton:hover p, .workbutton-2 p{
