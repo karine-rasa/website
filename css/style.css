@@ -121,19 +121,19 @@
 }
 
 .accordion-header {
-  width: 100%;
-  padding: 15px 20px;
-  background: var(--primary-color);
-  border: none;
-  outline: none;
-  text-align: left;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-
+    width: 100%;
+    padding: 15px 20px;
+    background: var(--background-color);
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: #333333;
 }
 
 /* .accordion-header:hover {
@@ -144,10 +144,10 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
-  background: var(--primary-color);
+  background: var(--background-color);
   padding: 0 20px;
   list-style: circle!important;
-
+  color: #666666;
 }
 
 .accordion-body p {
@@ -159,7 +159,7 @@
   display: inline-block;
   transition: transform 0.3s ease;
   font-size: 30px;
-  color: var(--third-color);
+  color: #666666;
   margin-right: 20px;
 }
 
@@ -3596,8 +3596,12 @@ textarea {
     }
 
     .home-hero-about {
-        height: 70vh;
+        height: 60vh;
     } 
+
+    .home-about-image {
+        height: 100%;
+    }
 
 }
 
