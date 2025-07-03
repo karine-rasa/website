@@ -3355,6 +3355,9 @@ textarea {
     .assistantship-part-two-services, .assistantship-part-two-image {
         width: 100%;
     }
+    .assistantship-part-two-image {
+        height: 40vh;
+    }
     
 }
 
