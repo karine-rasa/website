@@ -3594,14 +3594,14 @@ textarea {
     }
 }
 
-@media screen and (min-width: 1485px) {
+@media screen and (min-width: 1500px) {
 
     .about-hero-image {
         height: 600px;
     }
 
     .home-hero-about {
-        height: 60vh;
+        height: auto;
     } 
 
     .home-about-image {
