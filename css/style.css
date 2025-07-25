@@ -3603,7 +3603,7 @@ textarea {
 }
 
 @media screen and (max-width: 1439px) {
-    /* .about-hero-container {
+    .about-hero-container {
         flex-direction: column;
     }
 
@@ -3613,7 +3613,7 @@ textarea {
 
     .about-hero-text {
         width: 100%;
-    } */
+    }
 
     .about-ending-container {
         flex-direction: column;
@@ -3661,12 +3661,9 @@ textarea {
 
 @media screen and (min-width: 1210px) {
 
-    .about-hero-image {
-        height: 600px;
-    }
 
     .home-hero-about {
-        height: 80vh;
+        height: 90vh;
     } 
 
     .home-about-image {
@@ -3677,13 +3674,9 @@ textarea {
 
 @media screen and (min-width: 1500px) {
 
-    .about-hero-image {
-        height: 600px;
-    }
-
-    .home-hero-about {
-        height: 70vh;
-    } 
+    /* .home-hero-about {
+        height: 10vh;
+    }  */
 
     .home-about-image {
         height: 100%;
